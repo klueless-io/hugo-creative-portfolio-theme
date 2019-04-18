@@ -1,0 +1,16 @@
+<div class="box-masonry">
+    <div class="box-masonry">
+        <!-- <h3>Instagram - {{ .Params.instagram_thumbnail_width }} / {{ .Params.instagram_thumbnail_height }}</h3> -->
+        <a href="{{ .Permalink }}" class="linkwrap box-masonry-image with-hover-overlay with-hover-icon" >
+          <div class="blocker"></div>
+
+          <img src="http://i.ytimg.com/vi/{{ .Params.youtube_code }}/maxresdefault.jpg" title="{{ .Title }}" />
+          <!-- <iframe src="https://www.instagram.com/p/{{ .Params.instagram_code }}/embed" width="430" height="{{ .Params.instagram_thumbnail_height }}" frameborder="0" scrolling="no" allowtransparency="true"></iframe> -->
+        
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/pQAVinQXHgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </a>
+        <a href="http://www.youtube.com/oembed?url=https://www.youtube.com/embed/{{ .Params.youtube_code }}&format=json">
+            LINK
+        </a>
+    </div>
+</div>
